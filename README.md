@@ -8,5 +8,7 @@ The notebooks for DMS data analysis are listed here, and the rationale of the ma
  - Fold_change: details the data analysis steps to go from codon level relative abundance to amino acid level log2 fold-change 
  - Pymol_analysis: integrates the FCY1 FoldX data and other protein level information from various database in to the main DataFrame
  - Heatmaps: main notebook used to generate figures and perform statistical analysis
+ - Predict ajdacent sequence
 
 ## Growth curve analysis notebooks included in the repository:
+ - 
