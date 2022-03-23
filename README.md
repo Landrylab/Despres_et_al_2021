@@ -36,7 +36,9 @@ This notebook processes the fastq files and performs the following operations:
 1. Assess reads quality using FastQC
 2. Select reads with correct length and crop the 3-prime end to remove low confidence bases
 3. Demultiplex the libraries that were combined using the plate [RC-PCR library](https://pubmed.ncbi.nlm.nih.gov/27107012/) construction workflow
+
 Then, for each library
+
 4. Merge R1 and R2 using panda-seq
 5. Trim amplicons to remove adapter and barcode regions
 6. Aggregate identical reads together
