@@ -45,6 +45,6 @@ Then, for each library
 7. Align reads on the appropriate FCY1 cds reference
 8. Parse alignment to detect mutations
 9. Filter alignments and determine the effects of the mutations on the FCY1 cds at the codon level
-10. Sum variant abundances and calulate relative abundance of each FCY1 cds variant, and save as csv for each library
+10. Sum variant abundances and calulate relative abundance of each FCY1 cds variant, and save as csv for each library. we also add 1 to all read counts to make log2 fold-change calculations possible in cases where variants dropped out of the pool during the competition
 
 We applied stringent filters to minimize noise due to sequencing errors. At step 7, all sequences that have > 25 differences with the reference or that cover less than 80% of it are dropped. Most importantly, we only considered reads where mutations in the coding sequence occured within the same codon to avoid including double mutants.
