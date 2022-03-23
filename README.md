@@ -39,7 +39,7 @@ This notebook processes the fastq files and performs the following operations:
 
 Then, for each library
 
-4. Merge R1 and R2 using panda-seq
+4. Merge R1 and R2 using Pandaseq
 5. Trim amplicons to remove adapter and barcode regions
 6. Aggregate identical reads together
 7. Align reads on the appropriate FCY1 cds reference
@@ -47,3 +47,4 @@ Then, for each library
 9. Filter alignments and determine the effects of the mutations on the FCY1 cds at the codon level
 10. Sum variant abundances and calulate relative abundance of each FCY1 cds variant, and save as csv for each library
 
+We applied stringent filters to minimize noise due to sequencing errors. At step 7, all sequences that have > 25 differences with the reference or that cover less than 80% of it are dropped. Most importantly, we only considered reads where mutations in the coding sequence occured within the same codon to avoid including double mutants.
