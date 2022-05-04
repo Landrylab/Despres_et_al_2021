@@ -23,9 +23,11 @@ The notebooks for the Deep Mutationnal Scanning (DMS) data analysis and growth c
  - Fold_change: details the data analysis steps to go from codon level relative abundance to amino acid level log2 fold-change. 
  - Pymol_analysis: integrates the FCY1 FoldX data and other protein level information from various database in to the main DataFrame.
  - Heatmaps: main notebook used to generate figures and perform statistical analysis.
- - Predict ajdacent sequence: used to generate figure S8, which examines the effect of mutation position within codons. 
 
 ## Growth curve analysis notebooks included in the repository:
+ - validations: Analyze growth curve results and DHFR-PCA experiments
+ - hill_coefficient: analyze dose-response growth curves
+ - C_neo_mutants: Generate oligonucleotides for cnFCY1 mutagenesis and analyze experiments results
 
 
 
